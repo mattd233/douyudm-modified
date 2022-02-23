@@ -1,0 +1,18 @@
+{
+  "name": "douyudm-modified",
+  "version": "1.0.0",
+  "description": "Douyu danmu monitoring and storage.",
+  "main": "src/main.js",
+  "author": {
+    "name": "Matt",
+    "email": "matt@lg.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "douyudm": "^2.0.1",
+    "pg": "^8.7.3"
+  },
+  "scripts": {
+    "start": "node src/main.js"
+  }
+}
