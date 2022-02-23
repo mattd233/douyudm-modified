@@ -1,9 +1,6 @@
 //引入类库
 const { client }  = require('douyudm')
 
-// constants
-// const 
-
 //数据库
 const { Pool } = require('pg')
 
@@ -119,7 +116,7 @@ room.on('chatmsg', function(res) {
     }
 })
 
-//忽略荧光棒，鱼丸和超大丸星
+//记录礼物（忽略荧光棒，鱼丸和超大丸星）
 const NO_VALUE = ['824', '20000', '20008']
 room.on('spbc', function(res) {
     if (!NO_VALUE.includes(res.gfid)) {
@@ -136,9 +133,10 @@ room.on('spbc', function(res) {
 room.on('loginres', function(res) {
     console.log('[loginres]', '登录成功')
 })
-room.on('uenter', function(res) {
-    console.log('[uenter]', `${res.nn}进入房间`)
-})
+
+// room.on('uenter', function(res) {
+//     console.log('[uenter]', `${res.nn}进入房间`)
+// })
 
 //开始监听
 room.run()
