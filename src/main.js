@@ -54,46 +54,59 @@ room.on('chatmsg', function(res) {
     // superchat
     if (res.txt.startsWith('#sc')) {
         const text = res.txt.replace('#sc', '').trim();
+        // if (text.length < 0) {
+        //     return;
+        // }
         const nickname = res.nn;
-        const scQuery = `SELECT * FROM gift WHERE sn = '${nickname}'`;
-        console.log(scQuery);
+        const scQuery = `SELECT * FROM gift`;
         db.query(scQuery, (err, res) => {
             if (err) {
                 console.log(err)
                 return
             }
-            // 遍历所有礼物， 忽略超时，统计时段内
+            // 遍历所有礼物， 标记超时的
             const gifts = res.rows;
             let toDelete = [];
-            let value = 0
+            let currUser = [];
+            let value = 0;
             for (let i = 0; i<gifts.length; i++) {
-                // mark the item for deletion
-                toDelete.push(gifts[i].id);
-
                 const ts = new Date(gifts[i].ts).getTime();
                 // elased time in minutes
                 const elapsed =  (new Date().getTime() - ts) / 1000 / 60;
                 if (elapsed > 5) {
+                    // mark the item for deletion
+                    toDelete.push(gifts[i].id);
                     continue;
                 }
-                // value += gift_value[gifts[i].gfid] * gifts[i].gc
-                    
+                else if (gifts[i].sn === nickname) {
+                    // value += gift_value[gifts[i].gfid] * gifts[i].gc
+                    currUser.push(gifts[i].id)
+                }
+                 
             }
+            const scEnabled = false;
+            const highlight = false;
             // 根据统计的value来执行
             // if (value >= 50) {
-            //     const highlight = true;
+            //     highlight = true;
+            //     scEnabled = true;
             // } else if (value >= 30) {
-            //     const highlight = false;
+            //     scEnabled = true;
             // } else {
             //     console.log("Not enough value.")
-            //     return;
             // }
-            const highlight = true;
+            // if (scEnabled) {
             const scInsert = `INSERT INTO sc(highlight, nn ,txt) VALUES('${highlight}', '${nickname}', '${text}')`;
             db.query(scInsert, (err) => {
                 console.log(err ? err.stack : ` --[${nickname}] 发了一条sc`);
             })
+            // }
 
+            // 删除用户使用掉的礼物
+            if (scEnabled) {
+                Array.prototype.push.apply(toDelete, currUser)
+            }
+            console.log(toDelete);
             if (toDelete.length > 0) {
                 // 删除需要删除的value
                 let scDelete = `DELETE FROM gift WHERE id IN (`;
