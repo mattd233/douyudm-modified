@@ -1,3 +1,0 @@
-{
-	"diange-insert": "`INSERT INTO diange VALUES({${name}${timestamp}})`"
-}
