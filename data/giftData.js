@@ -1,1222 +1,1222 @@
 const giftData = {
     "192": {
         "n": "赞",
-        "pic": "/1606/485787ffc1725320c89381672084e317.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1606/485787ffc1725320c89381672084e317.png",
         "pc": 10
     },
     "193": {
         "n": "弱鸡",
-        "pic": "/1606/d6898677a3fbcd5694e174f976068b3f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1606/d6898677a3fbcd5694e174f976068b3f.png",
         "pc": 20
     },
     "194": {
         "n": "666",
-        "pic": "/1606/3b66315cdbef1a60137e6ce91aee0373.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1606/3b66315cdbef1a60137e6ce91aee0373.png",
         "pc": 600
     },
     "195": {
         "n": "飞机",
-        "pic": "/1606/d3b200d85817d947c4343120a1ac75c6.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1606/d3b200d85817d947c4343120a1ac75c6.png",
         "pc": 10000
     },
     "196": {
         "n": "火箭",
-        "pic": "/1707/446e94e640cdd6dc169d834fbd3e1bad.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1707/446e94e640cdd6dc169d834fbd3e1bad.png",
         "pc": 50000
     },
     "374": {
         "n": "风暴要火",
-        "pic": "/1611/5cdbb43ba7c60973b22f04342ef4097d.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1611/5cdbb43ba7c60973b22f04342ef4097d.png",
         "pc": 100
     },
     "375": {
         "n": "中国队强无敌",
-        "pic": "/1611/eba0222589912db9d63b3d0d575a70d3.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1611/eba0222589912db9d63b3d0d575a70d3.png",
         "pc": 10
     },
     "519": {
         "n": "呵呵",
-        "pic": "/1612/4e9b40cdc1634bbabc471e95f65d3909.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1612/4e9b40cdc1634bbabc471e95f65d3909.png",
         "pc": 10
     },
     "520": {
         "n": "稳",
-        "pic": "/1612/fb561d05a6d7c496039c8a6aa3c55ae5.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1612/fb561d05a6d7c496039c8a6aa3c55ae5.png",
         "pc": 10
     },
     "545": {
         "n": "觀心覺悟火箭",
-        "pic": "/1701/85cd28a7d86621b3f43d2e165ce9e955.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1701/85cd28a7d86621b3f43d2e165ce9e955.png",
         "pc": 50000
     },
     "600": {
         "n": "手游666",
-        "pic": "/1702/4235c8fb49b6e2facf32bf1bece6c457.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1702/4235c8fb49b6e2facf32bf1bece6c457.png",
         "pc": 10000
     },
     "607": {
         "n": "清香白莲火箭",
-        "pic": "/1702/36f912bb8bffe8c7ff02f5209b784f03.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1702/36f912bb8bffe8c7ff02f5209b784f03.png",
         "pc": 50000
     },
     "622": {
         "n": "熊大炫酷飞机",
-        "pic": "/1702/99d5718d6451018b4b2d568f0397cc42.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1702/99d5718d6451018b4b2d568f0397cc42.png",
         "pc": 10000
     },
     "640": {
         "n": "超管火箭",
-        "pic": "/1702/c90b80d1d5739cc4be27414df0146763.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1702/c90b80d1d5739cc4be27414df0146763.png",
         "pc": 50000
     },
     "659": {
         "n": "GG",
-        "pic": "/1703/414f660d868af1d6d5c05cbac7a951a4.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1703/414f660d868af1d6d5c05cbac7a951a4.png",
         "pc": 10
     },
     "660": {
         "n": "H1Z1",
-        "pic": "/1703/cc3733b83f79ddc12490b64b4754906e.jpg",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1703/cc3733b83f79ddc12490b64b4754906e.jpg",
         "pc": 10000
     },
     "672": {
         "n": "鱼购飞天神器",
-        "pic": "/1703/1faf4fa96c673bd5e66bbf79e46f4f52.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1703/1faf4fa96c673bd5e66bbf79e46f4f52.png",
         "pc": 20000
     },
     "673": {
         "n": "鱼购冲天神器",
-        "pic": "/1703/47d9a97041340585df9c3d8d2fed49dd.jpg",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1703/47d9a97041340585df9c3d8d2fed49dd.jpg",
         "pc": 50000
     },
     "674": {
         "n": "鱼购外星神器",
-        "pic": "/1703/2dee743c98258e62debe048a2f83411b.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1703/2dee743c98258e62debe048a2f83411b.png",
         "pc": 100000
     },
     "689": {
         "n": "御甲飞机",
-        "pic": "/1703/5bef4e4942f5c3a9ce403aa973513241.jpg",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1703/5bef4e4942f5c3a9ce403aa973513241.jpg",
         "pc": 10000
     },
     "690": {
         "n": "王牌火箭",
-        "pic": "/1703/b7c86e52bd4b9c2197a69af885c28261.jpg",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1703/b7c86e52bd4b9c2197a69af885c28261.jpg",
         "pc": 50000
     },
     "704": {
         "n": "黄金马车",
-        "pic": "/1704/ff4029ac9a203dd0a92219bcdc57b79e.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1704/ff4029ac9a203dd0a92219bcdc57b79e.png",
         "pc": 16600
     },
     "712": {
         "n": "棒棒哒",
-        "pic": "/1704/dc7cc52d49091fee57c8b192a7ae539f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1704/dc7cc52d49091fee57c8b192a7ae539f.png",
         "pc": 10
     },
     "713": {
         "n": "辣眼睛",
-        "pic": "/1704/b195898177e4c903987b67fde068bcef.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1704/b195898177e4c903987b67fde068bcef.png",
         "pc": 10
     },
     "714": {
         "n": "怂",
-        "pic": "/1704/a75555c5a4ed925e2b90cb691f8adda1.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1704/a75555c5a4ed925e2b90cb691f8adda1.png",
         "pc": 10
     },
     "750": {
         "n": "办卡",
-        "pic": "/1704/44bcc32e4dba6e97f926dc9eda849c39.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1704/44bcc32e4dba6e97f926dc9eda849c39.png",
         "pc": 600
     },
     "804": {
         "n": "铜牌",
-        "pic": "/1705/74632d9261b167ce81968ad6b96db6c7.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1705/74632d9261b167ce81968ad6b96db6c7.png",
         "pc": 10
     },
     "805": {
         "n": "银牌",
-        "pic": "/1705/70c9e9513de19f9981e5910ea583602c.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1705/70c9e9513de19f9981e5910ea583602c.png",
         "pc": 30
     },
     "806": {
         "n": "金牌",
-        "pic": "/1705/32db3c464b25e11fd4093734441167b8.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1705/32db3c464b25e11fd4093734441167b8.png",
         "pc": 60
     },
     "824": {
         "n": "粉丝荧光棒",
-        "pic": "/1705/7d724fb3d7e7d4a463a3e74e9929b919.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1705/7d724fb3d7e7d4a463a3e74e9929b919.png",
         "pc": 10
     },
     "947": {
         "n": "狼抓手",
-        "pic": "/1707/ce3ca897b6e1e111daf97a23fadf5109.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1707/ce3ca897b6e1e111daf97a23fadf5109.png",
         "pc": 10
     },
     "1005": {
         "n": "超级火箭",
-        "pic": "/1707/19fb88597ceed6d8b5e351a82738d48b.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1707/19fb88597ceed6d8b5e351a82738d48b.png",
         "pc": 200000
     },
     "1075": {
         "n": "这都不叫事",
-        "pic": "/1708/6cea1cbe9c447dd8d1d209cb6a7f5031.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1708/6cea1cbe9c447dd8d1d209cb6a7f5031.png",
         "pc": 200000
     },
     "1093": {
         "n": "前进100",
-        "pic": "/1708/fcb1ce8ff3c1350164222da34992b5f1.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1708/fcb1ce8ff3c1350164222da34992b5f1.png",
         "pc": 10
     },
     "1094": {
         "n": "前进200",
-        "pic": "/1708/907b54ba6ad7a36ba3442cc582cd9366.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1708/907b54ba6ad7a36ba3442cc582cd9366.png",
         "pc": 10
     },
     "1095": {
         "n": "前进300",
-        "pic": "/1709/db0ae2184d1674869e3e2da6489e68f0.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/db0ae2184d1674869e3e2da6489e68f0.png",
         "pc": 10
     },
     "1096": {
         "n": "前进500",
-        "pic": "/1709/0bc62af047447ddc9c0864e868d3c886.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/0bc62af047447ddc9c0864e868d3c886.png",
         "pc": 10
     },
     "1114": {
         "n": "呆萌喵",
-        "pic": "/1709/81119443e438fcf47cc3bcfe511a7447.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/81119443e438fcf47cc3bcfe511a7447.png",
         "pc": 200000
     },
     "1116": {
         "n": "般若波若蜜",
-        "pic": "/1709/80f81465f6d6a300a55ce64e82bcf15f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/80f81465f6d6a300a55ce64e82bcf15f.png",
         "pc": 200000
     },
     "1126": {
         "n": "恭贺新年",
-        "pic": "/1709/30dde5dde6a5f3740b107b01a8702d6f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/30dde5dde6a5f3740b107b01a8702d6f.png",
         "pc": 200000
     },
     "1130": {
         "n": "五毛钱",
-        "pic": "/1709/a876052eb4ec69463912335fa5e20116.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/a876052eb4ec69463912335fa5e20116.png",
         "pc": 200000
     },
     "1131": {
         "n": "一发",
-        "pic": "/1709/58edad3ba605ca978a3adb38b4f600f2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/58edad3ba605ca978a3adb38b4f600f2.png",
         "pc": 200000
     },
     "1132": {
         "n": "三周年快乐",
-        "pic": "/1709/d1fa9e15645189517f9dc2c61c8723e8.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/d1fa9e15645189517f9dc2c61c8723e8.png",
         "pc": 200000
     },
     "1138": {
         "n": "飞龙在天",
-        "pic": "/1709/e9f9c0c64c31dcff39ae30270121c058.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/e9f9c0c64c31dcff39ae30270121c058.png",
         "pc": 200000
     },
     "1140": {
         "n": "超级大鹅",
-        "pic": "/1710/f5fd906bb0cece979a362ddd58b4457a.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1710/f5fd906bb0cece979a362ddd58b4457a.png",
         "pc": 200000
     },
     "1142": {
         "n": "鱼小弟",
-        "pic": "/1709/033bc12770edf0ad47c956ebed7a387e.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/033bc12770edf0ad47c956ebed7a387e.png",
         "pc": 200000
     },
     "1144": {
         "n": "闪电超级火箭",
-        "pic": "/1709/7698851601e23c197bba9aaf3c8d8387.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/7698851601e23c197bba9aaf3c8d8387.png",
         "pc": 200000
     },
     "1149": {
         "n": "基本操作",
-        "pic": "/1709/4fe10de5369fe26869303d2b7bc13cc2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/4fe10de5369fe26869303d2b7bc13cc2.png",
         "pc": 200000
     },
     "1157": {
         "n": "冲动是魔鬼",
-        "pic": "/1709/86d3511fd9d7da5c28da1d8e9f42f216.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/86d3511fd9d7da5c28da1d8e9f42f216.png",
         "pc": 200000
     },
     "1166": {
         "n": "落地成盒",
-        "pic": "/1709/69960b237cd58ef177feeb99453763a2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/69960b237cd58ef177feeb99453763a2.png",
         "pc": 200000
     },
     "1169": {
         "n": "樱桃8",
-        "pic": "/1709/a742a60fd1e1b858fe6145a04d32de29.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/a742a60fd1e1b858fe6145a04d32de29.png",
         "pc": 200000
     },
     "1176": {
         "n": "冰河世纪",
-        "pic": "/1709/ae2c502ac8d657dbfd86a7c80c5e81cd.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1709/ae2c502ac8d657dbfd86a7c80c5e81cd.png",
         "pc": 200000
     },
     "1191": {
         "n": "盛典星光",
-        "pic": "/1710/ee50c647f4a9dd0f48c52dbb5b107fb2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1710/ee50c647f4a9dd0f48c52dbb5b107fb2.png",
         "pc": 10
     },
     "1192": {
         "n": "仙鱼散花",
-        "pic": "/1710/4a2bf549e2546608085682381fd010bb.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1710/4a2bf549e2546608085682381fd010bb.png",
         "pc": 10
     },
     "1193": {
         "n": "飞鱼破浪",
-        "pic": "/1710/1b8a577d9cc8cd953cc7f57ff02cdc65.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1710/1b8a577d9cc8cd953cc7f57ff02cdc65.png",
         "pc": 100
     },
     "1194": {
         "n": "鱼跃龙门",
-        "pic": "/1710/7764a92de2b0f4ea52460837185bbfdd.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1710/7764a92de2b0f4ea52460837185bbfdd.png",
         "pc": 1000
     },
     "1195": {
         "n": "鱼翔九天",
-        "pic": "/1710/44491da403617f688dc7573d624bc3f6.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1710/44491da403617f688dc7573d624bc3f6.png",
         "pc": 10000
     },
     "1197": {
         "n": "温柔宝宝",
-        "pic": "/1710/604e0d1241ba2bca1079c2f16afaf7da.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1710/604e0d1241ba2bca1079c2f16afaf7da.png",
         "pc": 200000
     },
     "1208": {
         "n": "安娜爱总裁 ",
-        "pic": "/1710/e4d72f1da8bebbef5920ff9046bd15d6.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1710/e4d72f1da8bebbef5920ff9046bd15d6.png",
         "pc": 200000
     },
     "1210": {
         "n": "觀心覺悟",
-        "pic": "/1710/55346f70ce56552708edfb22c20becec.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1710/55346f70ce56552708edfb22c20becec.png",
         "pc": 200000
     },
     "1211": {
         "n": "格子火箭",
-        "pic": "/1710/f26ca4e72aa3b555827f90d1d1d73cc6.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1710/f26ca4e72aa3b555827f90d1d1d73cc6.png",
         "pc": 200000
     },
     "1214": {
         "n": "哈士奇",
-        "pic": "/1710/33bfe6460fac5ecc9ac4f75ed3f3b3ef.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1710/33bfe6460fac5ecc9ac4f75ed3f3b3ef.png",
         "pc": 200000
     },
     "1225": {
         "n": "一顿操作",
-        "pic": "/1711/a47f539403454146016abbbfa118dcd7.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/a47f539403454146016abbbfa118dcd7.png",
         "pc": 200000
     },
     "1228": {
         "n": "金色明灯",
-        "pic": "/1711/c28e09b75a92c72964105313333137ee.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/c28e09b75a92c72964105313333137ee.png",
         "pc": 10
     },
     "1229": {
         "n": "银色明灯",
-        "pic": "/1711/d34f2c4562f4648737baf2b9cd576c86.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/d34f2c4562f4648737baf2b9cd576c86.png",
         "pc": 10
     },
     "1230": {
         "n": "幺幺火箭",
-        "pic": "/1711/8a07fc0dc5d952e592b84220f3bd0da2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/8a07fc0dc5d952e592b84220f3bd0da2.png",
         "pc": 200000
     },
     "1231": {
         "n": "抬一手",
-        "pic": "/1711/a2b58046c4ca104187dca5ec63800dfb.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/a2b58046c4ca104187dca5ec63800dfb.png",
         "pc": 100
     },
     "1232": {
         "n": "打Call",
-        "pic": "/1711/4f38ff97a509ab4dcc871dd23a48d8fa.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/4f38ff97a509ab4dcc871dd23a48d8fa.png",
         "pc": 10
     },
     "1234": {
         "n": "为爱击掌",
-        "pic": "/1711/9bebc6ca07e889dde57002d9f14f7c6f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/9bebc6ca07e889dde57002d9f14f7c6f.png",
         "pc": 200000
     },
     "1235": {
         "n": "双十一火箭",
-        "pic": "/1711/8ad8fca6d64307eedab827c965cc84d7.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/8ad8fca6d64307eedab827c965cc84d7.png",
         "pc": 50000
     },
     "1236": {
         "n": "967up",
-        "pic": "/1711/cb8e9764df27dda9850727ad428a41c7.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/cb8e9764df27dda9850727ad428a41c7.png",
         "pc": 200000
     },
     "1237": {
         "n": "赞",
-        "pic": "/1711/1533b6d7fd2da8ccf04b9584703eed6f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/1533b6d7fd2da8ccf04b9584703eed6f.png",
         "pc": 10
     },
     "1238": {
         "n": "背锅",
-        "pic": "/1711/7d6c5230258e3fd792255a51f7fe8f57.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/7d6c5230258e3fd792255a51f7fe8f57.png",
         "pc": 10
     },
     "1239": {
         "n": "红蓝buff",
-        "pic": "/1711/6703e7c60a2fceee9243d9276a2be766.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/6703e7c60a2fceee9243d9276a2be766.png",
         "pc": 20
     },
     "1240": {
         "n": "槟榔火箭",
-        "pic": "/1711/1de69400e0f09f04a1fe1a5f156a7c15.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/1de69400e0f09f04a1fe1a5f156a7c15.png",
         "pc": 200000
     },
     "1244": {
         "n": "超级幸运",
-        "pic": "/1711/21ffcbf70fc95567fcbe237b2a76b2da.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/21ffcbf70fc95567fcbe237b2a76b2da.png",
         "pc": 200000
     },
     "1246": {
         "n": "秋",
-        "pic": "/1711/d27292439be616ab2cf0ca4916bc7d37.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/d27292439be616ab2cf0ca4916bc7d37.png",
         "pc": 200000
     },
     "1247": {
         "n": "魔幻之箭",
-        "pic": "/1711/bfb0547755cdad3ded8c1b07a60c33cd.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/bfb0547755cdad3ded8c1b07a60c33cd.png",
         "pc": 200000
     },
     "1248": {
         "n": "1.8亿老婆",
-        "pic": "/1711/9ac36de3c1366cd23343473d13887b30.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/9ac36de3c1366cd23343473d13887b30.png",
         "pc": 200000
     },
     "1250": {
         "n": "超级热游蒸汽",
-        "pic": "/1711/22c11879a6ead952de95f760f195911c.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/22c11879a6ead952de95f760f195911c.png",
         "pc": 200000
     },
     "1254": {
         "n": "丘比特之箭",
-        "pic": "/1711/e4d8e50563c2ab5113d416c9caaf57ab.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/e4d8e50563c2ab5113d416c9caaf57ab.png",
         "pc": 200000
     },
     "1258": {
         "n": "超级大头豆糕",
-        "pic": "/1711/70b301cc9c70300e1df71f1117c1ef6b.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/70b301cc9c70300e1df71f1117c1ef6b.png",
         "pc": 200000
     },
     "1272": {
         "n": "抽奖辩非欧",
-        "pic": "/1711/fbd32d9c6f7d67940315f427a8c18232.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/fbd32d9c6f7d67940315f427a8c18232.png",
         "pc": 200000
     },
     "1273": {
         "n": "骚骚骚骚",
-        "pic": "/1711/bd88121addb4d37ffff3beb93636b472.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/bd88121addb4d37ffff3beb93636b472.png",
         "pc": 200000
     },
     "1287": {
         "n": "剑舞红颜笑",
-        "pic": "/1711/f0782b5d4f7b49e19b6a5e2a939a22da.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/f0782b5d4f7b49e19b6a5e2a939a22da.png",
         "pc": 200000
     },
     "1288": {
         "n": "星光财团",
-        "pic": "/1711/a9d79ad806cecdb54bbb8d45d2140298.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/a9d79ad806cecdb54bbb8d45d2140298.png",
         "pc": 200000
     },
     "1289": {
         "n": "阿姆斯特朗",
-        "pic": "/1711/3999ee1940bf7017972bd6e5980023c7.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/3999ee1940bf7017972bd6e5980023c7.png",
         "pc": 200000
     },
     "1290": {
         "n": "菁伦超级火箭",
-        "pic": "/1711/e68a5b13431b8c8876cd42b23e325673.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/e68a5b13431b8c8876cd42b23e325673.png",
         "pc": 200000
     },
     "1291": {
         "n": "枸杞槟榔",
-        "pic": "/1711/dabfdadc190c149ae6b6e46d7f61e5de.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/dabfdadc190c149ae6b6e46d7f61e5de.png",
         "pc": 200000
     },
     "1292": {
         "n": "莹yin69",
-        "pic": "/1711/61d33cd9e4980bf7aa0eca958048c23a.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/61d33cd9e4980bf7aa0eca958048c23a.png",
         "pc": 200000
     },
     "1293": {
         "n": "一支穿云剑",
-        "pic": "/1711/43caf11fb5852a95b0c25a8ab1653241.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/43caf11fb5852a95b0c25a8ab1653241.png",
         "pc": 200000
     },
     "1294": {
         "n": "老干爹辣酱",
-        "pic": "/1711/28c2f4b13a354d4c8d1ff0f84fc757ea.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/28c2f4b13a354d4c8d1ff0f84fc757ea.png",
         "pc": 200000
     },
     "1301": {
         "n": "泰兰德的果子",
-        "pic": "/1711/ec4d95c9c3462a079fb597f1aa80559d.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/ec4d95c9c3462a079fb597f1aa80559d.png",
         "pc": 10
     },
     "1302": {
         "n": "伊利丹的刀",
-        "pic": "/1711/afb530ab994ab419295739160a6dc3b8.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1711/afb530ab994ab419295739160a6dc3b8.png",
         "pc": 20
     },
     "1304": {
         "n": "十八专用超火",
-        "pic": "/1712/bfed1458c67dcc5911f60099275064f2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/bfed1458c67dcc5911f60099275064f2.png",
         "pc": 200000
     },
     "1327": {
         "n": "平安果",
-        "pic": "/1712/33a7e878ed9dcbe6fbca077ace6e519f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/33a7e878ed9dcbe6fbca077ace6e519f.png",
         "pc": 10
     },
     "1328": {
         "n": "十三少",
-        "pic": "/1712/c9e6ac0e16e0e5d9d45ce64cb1306c39.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/c9e6ac0e16e0e5d9d45ce64cb1306c39.png",
         "pc": 200000
     },
     "1329": {
         "n": "我养你",
-        "pic": "/1712/675c40ff49438d498200912bdc0ed30e.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/675c40ff49438d498200912bdc0ed30e.png",
         "pc": 200000
     },
     "1330": {
         "n": "思念星",
-        "pic": "/1712/d05e64dac033d07d9738306e825b5294.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/d05e64dac033d07d9738306e825b5294.png",
         "pc": 200000
     },
     "1331": {
         "n": "瑞雪丰年",
-        "pic": "/1712/2c510f9c37ce88b7af784f4a5b688356.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/2c510f9c37ce88b7af784f4a5b688356.png",
         "pc": 50
     },
     "1332": {
         "n": "鱼福降临",
-        "pic": "/1712/0f66e95abb74818c2cf3bcbaed6a6b21.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/0f66e95abb74818c2cf3bcbaed6a6b21.png",
         "pc": 100
     },
     "1344": {
         "n": "一口毒奶",
-        "pic": "/1712/f6581c6a2ed0d97ac505823a2b3cd207.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/f6581c6a2ed0d97ac505823a2b3cd207.png",
         "pc": 10
     },
     "1345": {
         "n": "一杯毒奶",
-        "pic": "/1712/f0fd73cbaaf9be25793604658f795e78.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/f0fd73cbaaf9be25793604658f795e78.png",
         "pc": 100
     },
     "1346": {
         "n": "一瓶毒奶",
-        "pic": "/1712/15a7a2875d347be6dcf891cdcf13f468.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/15a7a2875d347be6dcf891cdcf13f468.png",
         "pc": 1000
     },
     "1347": {
         "n": "一箱毒奶",
-        "pic": "/1712/978a8d47a7a81bd6d649ab6246f3be72.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/978a8d47a7a81bd6d649ab6246f3be72.png",
         "pc": 10100
     },
     "1350": {
         "n": "盛典巅峰火箭",
-        "pic": "/1712/7904d4ca68bff498705b2faaf7e64464.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/7904d4ca68bff498705b2faaf7e64464.png",
         "pc": 50000
     },
     "1351": {
         "n": "大胸超级火箭",
-        "pic": "/1712/7930f3ea59da746a319492b4c2469ec3.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/7930f3ea59da746a319492b4c2469ec3.png",
         "pc": 200000
     },
     "1352": {
         "n": "平胸超级火箭",
-        "pic": "/1712/4dcff485678e512618949f9880b8105d.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/4dcff485678e512618949f9880b8105d.png",
         "pc": 200000
     },
     "1353": {
         "n": "爱你一万年",
-        "pic": "/1712/d281037428d9356e2f4e0143805a3434.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/d281037428d9356e2f4e0143805a3434.png",
         "pc": 200000
     },
     "1355": {
         "n": "说谎",
-        "pic": "/1712/fb28e14c2e5045deafdc68d9bd5042de.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/fb28e14c2e5045deafdc68d9bd5042de.png",
         "pc": 200000
     },
     "1362": {
         "n": "道皇火箭",
-        "pic": "/1712/e6c5d1f1573f937f5b8fc89f5e51fe56.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/e6c5d1f1573f937f5b8fc89f5e51fe56.png",
         "pc": 200000
     },
     "1363": {
         "n": "豹豹豹",
-        "pic": "/1712/0b05e8767b37ac5c87c9ed65ff4b1fc5.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/0b05e8767b37ac5c87c9ed65ff4b1fc5.png",
         "pc": 200000
     },
     "1364": {
         "n": "大融婷儿",
-        "pic": "/1712/aca6d617e4469ac170dc43f38fb175f3.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/aca6d617e4469ac170dc43f38fb175f3.png",
         "pc": 200000
     },
     "1365": {
         "n": "绿鞋找妈妈",
-        "pic": "/1712/600fda945a867486495a438c59e45f77.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/600fda945a867486495a438c59e45f77.png",
         "pc": 200000
     },
     "1367": {
         "n": "一口毒奶",
-        "pic": "/1712/adf2176a7655e799ba0122b02371e79e.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1712/adf2176a7655e799ba0122b02371e79e.png",
         "pc": 10
     },
     "1369": {
         "n": "灌篮高手",
-        "pic": "/1801/a6797711cdc867fd6fb5c6e9090cfec2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/a6797711cdc867fd6fb5c6e9090cfec2.png",
         "pc": 200000
     },
     "1370": {
         "n": "兽兽号超火",
-        "pic": "/1801/eb08a27f27cff76fbf2fda754aa4688e.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/eb08a27f27cff76fbf2fda754aa4688e.png",
         "pc": 200000
     },
     "1371": {
         "n": "幸运火箭",
-        "pic": "/1801/e3d218d1ad3adff6864a45638f6c81f4.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/e3d218d1ad3adff6864a45638f6c81f4.png",
         "pc": 200000
     },
     "1373": {
         "n": "飞机",
-        "pic": "/1801/f30f266ec31ee71fbcbc016d5caf3785.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/f30f266ec31ee71fbcbc016d5caf3785.png",
         "pc": 10000
     },
     "1374": {
         "n": "火箭",
-        "pic": "/1801/2ba20b305c77715e6612f34195272270.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/2ba20b305c77715e6612f34195272270.png",
         "pc": 50000
     },
     "1375": {
         "n": "超级火箭",
-        "pic": "/1801/1f97f208a4ce6e466ef0a70ee0f1c177.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/1f97f208a4ce6e466ef0a70ee0f1c177.png",
         "pc": 200000
     },
     "1380": {
         "n": "微笑",
-        "pic": "/1801/cb2fe648824fe582db3e6017ba698110.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/cb2fe648824fe582db3e6017ba698110.png",
         "pc": 200000
     },
     "1382": {
         "n": "KSG",
-        "pic": "/1801/32be7fd6ffdda8ad78d53a20041a163a.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/32be7fd6ffdda8ad78d53a20041a163a.png",
         "pc": 200000
     },
     "1388": {
         "n": "火箭",
-        "pic": "/1801/cebb022036e1f35e09eb06b1340e1835.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/cebb022036e1f35e09eb06b1340e1835.png",
         "pc": 50000
     },
     "1392": {
         "n": "弥大远洋号",
-        "pic": "/1801/322d7aac4ae1cfdbe98811837bc17d1d.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/322d7aac4ae1cfdbe98811837bc17d1d.png",
         "pc": 200000
     },
     "1394": {
         "n": "伴风眠",
-        "pic": "/1801/cbc253fd0dd0e2aff1043f42224ffe81.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/cbc253fd0dd0e2aff1043f42224ffe81.png",
         "pc": 200000
     },
     "1395": {
         "n": "IRONM",
-        "pic": "/1801/2819d8e712f280086e284aa9b0b08eff.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/2819d8e712f280086e284aa9b0b08eff.png",
         "pc": 200000
     },
     "1397": {
         "n": "小温心",
-        "pic": "/1801/42836d77671dc035e56863e7db4bf351.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/42836d77671dc035e56863e7db4bf351.png",
         "pc": 60
     },
     "1398": {
         "n": "告白气球",
-        "pic": "/1801/280bc12aa6083b3fd3feec93ebb01f6c.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1801/280bc12aa6083b3fd3feec93ebb01f6c.png",
         "pc": 52100
     },
     "1421": {
         "n": "烟花易冷",
-        "pic": "/1802/cee2ba359e0f737ca20219a3a1179a0f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/cee2ba359e0f737ca20219a3a1179a0f.png",
         "pc": 200000
     },
     "1424": {
         "n": "南豆豆",
-        "pic": "/1802/40b1dbfc1dbf872f1e4077bc4efb5b2f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/40b1dbfc1dbf872f1e4077bc4efb5b2f.png",
         "pc": 200000
     },
     "1425": {
         "n": "裤裆里家族",
-        "pic": "/1802/79d18c472480f29ce8feccad31234544.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/79d18c472480f29ce8feccad31234544.png",
         "pc": 200000
     },
     "1426": {
         "n": "办卡",
-        "pic": "/1802/e5053cda6dfa5c0cad49895c67725d4d.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/e5053cda6dfa5c0cad49895c67725d4d.png",
         "pc": 600
     },
     "1427": {
         "n": "赞",
-        "pic": "/1802/c4137762f43f19e63a9ca2f32c036d6e.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/c4137762f43f19e63a9ca2f32c036d6e.png",
         "pc": 10
     },
     "1428": {
         "n": "弱鸡",
-        "pic": "/1802/dfa3cdbdef101427780069c7a7618a0e.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/dfa3cdbdef101427780069c7a7618a0e.png",
         "pc": 20
     },
     "1429": {
         "n": "药丸",
-        "pic": "/1802/b61bfbe478afeb432202470a4bbe97ab.jpg",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/b61bfbe478afeb432202470a4bbe97ab.jpg",
         "pc": 10
     },
     "1430": {
         "n": "药丸",
-        "pic": "/1802/af4a0cb3828a61ebee1c9f2ad124092c.jpg",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/af4a0cb3828a61ebee1c9f2ad124092c.jpg",
         "pc": 10
     },
     "1432": {
         "n": "没排面",
-        "pic": "/1802/4a0f7aeac4afd83645c72deecc8e9c50.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/4a0f7aeac4afd83645c72deecc8e9c50.png",
         "pc": 10
     },
     "1433": {
         "n": "医疗箱",
-        "pic": "/1802/e38535b4282b06f0c7e6d27c5ee4d648.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/e38535b4282b06f0c7e6d27c5ee4d648.png",
         "pc": 20
     },
     "1434": {
         "n": "吃鸡",
-        "pic": "/1802/a0c3dd1b3627158380250f4a2737b8ff.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/a0c3dd1b3627158380250f4a2737b8ff.png",
         "pc": 10
     },
     "1435": {
         "n": "皇冠",
-        "pic": "/1802/c321ec7aaba71b8c96cee48e9c435ffd.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/c321ec7aaba71b8c96cee48e9c435ffd.png",
         "pc": 600
     },
     "1437": {
         "n": "玫瑰花",
-        "pic": "/1802/45e317483d17a0da3f52677cc5cd1342.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/45e317483d17a0da3f52677cc5cd1342.png",
         "pc": 20
     },
     "1438": {
         "n": "小香蕉",
-        "pic": "/1802/34b4b01776958cbd1ac150333a891140.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/34b4b01776958cbd1ac150333a891140.png",
         "pc": 10
     },
     "1439": {
         "n": "猫耳",
-        "pic": "/1802/34955e8f5c7c2fca7b864c142903dc95.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/34955e8f5c7c2fca7b864c142903dc95.png",
         "pc": 20
     },
     "1440": {
         "n": "女仆装",
-        "pic": "/1802/0626da0604fc52097aa263a98a72c65d.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/0626da0604fc52097aa263a98a72c65d.png",
         "pc": 10
     },
     "1444": {
         "n": "散出一片天",
-        "pic": "/1802/3d98d7eeafe3c0761c5c9d2d18afec45.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/3d98d7eeafe3c0761c5c9d2d18afec45.png",
         "pc": 200000
     },
     "1454": {
         "n": "飞鸡送福",
-        "pic": "/1802/bde7ed286736c024ecc22fb16a182c3d.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/bde7ed286736c024ecc22fb16a182c3d.png",
         "pc": 10000
     },
     "1455": {
         "n": "福瑞火箭",
-        "pic": "/1802/6a039eb01fab1de3652448123176b6fd.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/6a039eb01fab1de3652448123176b6fd.png",
         "pc": 50000
     },
     "1456": {
         "n": "阳春贺岁超火",
-        "pic": "/1802/442775edfe823d6fa30b45b4a11c1ce0.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/442775edfe823d6fa30b45b4a11c1ce0.png",
         "pc": 200000
     },
     "1457": {
         "n": "香瓣",
-        "pic": "/1802/d814d08a099ff1934ef9a2a1ae7a0beb.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/d814d08a099ff1934ef9a2a1ae7a0beb.png",
         "pc": 200000
     },
     "1458": {
         "n": "旺旺旺",
-        "pic": "/1802/a2d334a17079b07cb4d102db593c088a.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/a2d334a17079b07cb4d102db593c088a.png",
         "pc": 200000
     },
     "1459": {
         "n": "二珂的旅行",
-        "pic": "/1802/9dce13fb6c3d66c1ba50bdeaf05714a8.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/9dce13fb6c3d66c1ba50bdeaf05714a8.png",
         "pc": 200000
     },
     "1461": {
         "n": "莫莫哒",
-        "pic": "/1802/5dd03302066745f2bf41cfb1cf92d56f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1802/5dd03302066745f2bf41cfb1cf92d56f.png",
         "pc": 200000
     },
     "1464": {
         "n": "一起看日出",
-        "pic": "/1803/2ee0ae1a6a615a2f687cf7deb06c0df5.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/2ee0ae1a6a615a2f687cf7deb06c0df5.png",
         "pc": 200000
     },
     "1465": {
         "n": "魔鬼中的天使",
-        "pic": "/1803/4476efa330172125edbea9b72fb75aa5.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/4476efa330172125edbea9b72fb75aa5.png",
         "pc": 200000
     },
     "1473": {
         "n": "星光点点",
-        "pic": "/1803/29de5f3c0bcb8a107cbbdba78d00406a.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/29de5f3c0bcb8a107cbbdba78d00406a.png",
         "pc": 20
     },
     "1477": {
         "n": "办卡",
-        "pic": "/1803/3f1c327f750da2907b36bddaab028f56.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/3f1c327f750da2907b36bddaab028f56.png",
         "pc": 600
     },
     "1479": {
         "n": "素右右补给包",
-        "pic": "/1803/6ecbf6082167e1b199c221f3ada90931.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/6ecbf6082167e1b199c221f3ada90931.png",
         "pc": 200000
     },
     "1484": {
         "n": "能量饮料",
-        "pic": "/1803/546a7f1eb2f3488e1bb189b6875c5266.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/546a7f1eb2f3488e1bb189b6875c5266.png",
         "pc": 10
     },
     "1485": {
         "n": "肾上腺素",
-        "pic": "/1803/1f45631cbc95192313e9dbef205e6c52.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/1f45631cbc95192313e9dbef205e6c52.png",
         "pc": 20
     },
     "1486": {
         "n": "平底锅",
-        "pic": "/1803/4e54d9f4d82482e9f05929c4b3d1dbc4.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/4e54d9f4d82482e9f05929c4b3d1dbc4.png",
         "pc": 30
     },
     "1489": {
         "n": "办卡",
-        "pic": "/1803/4970c924a00f5180044e7de0fe879a2a.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/4970c924a00f5180044e7de0fe879a2a.png",
         "pc": 600
     },
     "1507": {
         "n": "至尊水果导弹",
-        "pic": "/1803/ca8013481a1626f1444a9eaf787e9e25.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/ca8013481a1626f1444a9eaf787e9e25.png",
         "pc": 200000
     },
     "1509": {
         "n": "神龙见首",
-        "pic": "/1803/86b4e3b5c9b1ee67edd4836749604139.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/86b4e3b5c9b1ee67edd4836749604139.png",
         "pc": 200000
     },
     "1510": {
         "n": "争锋火箭",
-        "pic": "/1803/098efa72334b54cc72f72aff59db5df2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/098efa72334b54cc72f72aff59db5df2.png",
         "pc": 50000
     },
     "1511": {
         "n": "狂欢集结超火",
-        "pic": "/1803/1f17563274e849a8a25e494a2452b084.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1803/1f17563274e849a8a25e494a2452b084.png",
         "pc": 200000
     },
     "1519": {
         "n": "应援飞机",
-        "pic": "/1804/7dd534c6285af8a5cf6582d4ea4ed568.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/7dd534c6285af8a5cf6582d4ea4ed568.png",
         "pc": 10000
     },
     "1530": {
         "n": "寂寞灵魂",
-        "pic": "/1804/a7656982bdf7b50c94ce9f06424cbf69.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/a7656982bdf7b50c94ce9f06424cbf69.png",
         "pc": 200000
     },
     "1531": {
         "n": "女朋友",
-        "pic": "/1804/9aad57ba87159330e4e6599f79f1e5d3.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/9aad57ba87159330e4e6599f79f1e5d3.png",
         "pc": 200000
     },
     "1537": {
         "n": "心里只有你",
-        "pic": "/1804/dd7b0d97223cb9a6c2bc588ea1c6f7d2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/dd7b0d97223cb9a6c2bc588ea1c6f7d2.png",
         "pc": 200000
     },
     "1541": {
         "n": "一根星光棒",
-        "pic": "/1804/bfa7dcad34159ab24eb760d19308dcd6.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/bfa7dcad34159ab24eb760d19308dcd6.png",
         "pc": 10
     },
     "1542": {
         "n": "一束星光棒",
-        "pic": "/1804/e38061be1d2951ef93a0538b1a825c32.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/e38061be1d2951ef93a0538b1a825c32.png",
         "pc": 100
     },
     "1543": {
         "n": "一捆星光棒",
-        "pic": "/1804/3051433f176bc8a58bab09eeafee6314.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/3051433f176bc8a58bab09eeafee6314.png",
         "pc": 1000
     },
     "1544": {
         "n": "一堆星光棒",
-        "pic": "/1804/a05ed4b13b2bd45943c49862d25a8998.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/a05ed4b13b2bd45943c49862d25a8998.png",
         "pc": 10000
     },
     "1545": {
         "n": "礼物buff",
-        "pic": "/1804/84d7535a7a2aeb046f8a171949cf25a0.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/84d7535a7a2aeb046f8a171949cf25a0.png",
         "pc": 6659
     },
     "1546": {
         "n": "鱼丸buff",
-        "pic": "/1804/078f397f98ce2466eb464d802b6a5014.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/078f397f98ce2466eb464d802b6a5014.png",
         "pc": 6659
     },
     "1553": {
         "n": "筑梦之鲲",
-        "pic": "/1804/d035fb267a8fab259c6b0a5f0de673b2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/d035fb267a8fab259c6b0a5f0de673b2.png",
         "pc": 200000
     },
     "1554": {
         "n": "星空火箭",
-        "pic": "/1804/6439da679ebe300e0943518643183cd8.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/6439da679ebe300e0943518643183cd8.png",
         "pc": 200000
     },
     "1562": {
         "n": "福特翼搏",
-        "pic": "/1804/fc477171ea897c53847f503083b58c57.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/fc477171ea897c53847f503083b58c57.png",
         "pc": 50000
     },
     "1572": {
         "n": "EJ小脑斧",
-        "pic": "/1804/d521ed69cd2cc07787dd2dcc1ed8e352.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/d521ed69cd2cc07787dd2dcc1ed8e352.png",
         "pc": 200000
     },
     "1573": {
         "n": "688专属",
-        "pic": "/1804/c01f97e787c439c0ba0489c338c1f0fe.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/c01f97e787c439c0ba0489c338c1f0fe.png",
         "pc": 200000
     },
     "1574": {
         "n": "银子么么哒",
-        "pic": "/1804/fefad2210a4d295a49bd8b5f15e98c26.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/fefad2210a4d295a49bd8b5f15e98c26.png",
         "pc": 200000
     },
     "1575": {
         "n": "天南地北",
-        "pic": "/1804/d63fc01dbe0d06fe25f8fa518b5bfc9a.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/d63fc01dbe0d06fe25f8fa518b5bfc9a.png",
         "pc": 200000
     },
     "1576": {
         "n": "冰心葑",
-        "pic": "/1804/99b1ce0ba6885c34ae68b8149b846f41.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/99b1ce0ba6885c34ae68b8149b846f41.png",
         "pc": 200000
     },
     "1577": {
         "n": "月光飞船",
-        "pic": "/1804/79ffce1357286225f9b32e5c8363e4ff.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/79ffce1357286225f9b32e5c8363e4ff.png",
         "pc": 200000
     },
     "1578": {
         "n": "天使纪元",
-        "pic": "/1804/bc29870229bbcd303c4708acfd4999a1.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1804/bc29870229bbcd303c4708acfd4999a1.png",
         "pc": 200000
     },
     "1581": {
         "n": "28号技师",
-        "pic": "/1805/d024e2504b23432386977780f10ec13e.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/d024e2504b23432386977780f10ec13e.png",
         "pc": 200000
     },
     "1582": {
         "n": "小怪兽",
-        "pic": "/1805/2672129637b8fd4e08f077f7a695cff7.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/2672129637b8fd4e08f077f7a695cff7.png",
         "pc": 200000
     },
     "1585": {
         "n": "小西瓜",
-        "pic": "/1805/d4a6b54c2cc8728f30b85b8dec32234a.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/d4a6b54c2cc8728f30b85b8dec32234a.png",
         "pc": 10
     },
     "1593": {
         "n": "小温心",
-        "pic": "/1805/41875ed1141f8eb07c5e1e114252e0fd.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/41875ed1141f8eb07c5e1e114252e0fd.png",
         "pc": 10
     },
     "1596": {
         "n": "安慕希真好喝",
-        "pic": "/1805/735134209e780b0ba024636121e0dc50.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/735134209e780b0ba024636121e0dc50.png",
         "pc": 200000
     },
     "1598": {
         "n": "鸡皇驾到",
-        "pic": "/1805/ee805a62f79cf06d295d3409b0883754.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/ee805a62f79cf06d295d3409b0883754.png",
         "pc": 200000
     },
     "1599": {
         "n": "小心大融",
-        "pic": "/1805/71cd92cb8d3097cb97c6affc2ddf19c8.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/71cd92cb8d3097cb97c6affc2ddf19c8.png",
         "pc": 200000
     },
     "1600": {
         "n": "呆妹儿大大大",
-        "pic": "/1805/4fd66d80541baeaa634f6c5b98d0fcc7.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/4fd66d80541baeaa634f6c5b98d0fcc7.png",
         "pc": 200000
     },
     "1602": {
         "n": "明日之星",
-        "pic": "/1805/a8757c95935e331dd08b6c55f360eafa.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/a8757c95935e331dd08b6c55f360eafa.png",
         "pc": 200000
     },
     "1603": {
         "n": "对A皇后号",
-        "pic": "/1805/e3fbac013c2fd17a10b93430eefeb449.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/e3fbac013c2fd17a10b93430eefeb449.png",
         "pc": 200000
     },
     "1604": {
         "n": "恋爱ING",
-        "pic": "/1805/33b5f5529d7bd2c09a8b8540bde72858.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/33b5f5529d7bd2c09a8b8540bde72858.png",
         "pc": 200000
     },
     "1605": {
         "n": "心悦猫咪",
-        "pic": "/1805/18bb674ec668cbc04399faaff5780a6f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/18bb674ec668cbc04399faaff5780a6f.png",
         "pc": 60
     },
     "1615": {
         "n": "挚爱告白",
-        "pic": "/1805/333492d505dcb44ab09def96275cc66b.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/333492d505dcb44ab09def96275cc66b.png",
         "pc": 50000
     },
     "1616": {
         "n": "甜蜜情书",
-        "pic": "/1805/f7a64bda8aa3b9ae9cad529e77db6484.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/f7a64bda8aa3b9ae9cad529e77db6484.png",
         "pc": 10000
     },
     "1617": {
         "n": "浪漫密语",
-        "pic": "/1805/7fcd8f9ddec0de2977be29f616d83bd0.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/7fcd8f9ddec0de2977be29f616d83bd0.png",
         "pc": 600
     },
     "1620": {
         "n": "天圆地方",
-        "pic": "/1805/ad393d84b1bfdfe188bbda905a0184ba.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/ad393d84b1bfdfe188bbda905a0184ba.png",
         "pc": 200000
     },
     "1634": {
         "n": "一期一会",
-        "pic": "/1805/9932449770a79e1c6e448995d1fafc84.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/9932449770a79e1c6e448995d1fafc84.png",
         "pc": 200000
     },
     "1635": {
         "n": "梦幻之羽",
-        "pic": "/1805/c38641b331b0df0a84546f713bd1c380.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/c38641b331b0df0a84546f713bd1c380.png",
         "pc": 200000
     },
     "1636": {
         "n": "爱是一道光",
-        "pic": "/1805/17fe09a93e88ab5eb76d63d98198834e.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/17fe09a93e88ab5eb76d63d98198834e.png",
         "pc": 200000
     },
     "1637": {
         "n": "金宝专属超火",
-        "pic": "/1805/a71e4352f67fd3d1e40d7c725b5ac785.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/a71e4352f67fd3d1e40d7c725b5ac785.png",
         "pc": 200000
     },
     "1655": {
         "n": "我不好色",
-        "pic": "/1805/895adc1c860bab6ba3b7ec7a8b39e671.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/895adc1c860bab6ba3b7ec7a8b39e671.png",
         "pc": 200000
     },
     "1661": {
         "n": "Aslank",
-        "pic": "/1805/00ec8bca3e981b8dfa3e5b3836b072c1.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/00ec8bca3e981b8dfa3e5b3836b072c1.png",
         "pc": 200000
     },
     "1666": {
         "n": "京东优惠券",
-        "pic": "/1805/4a41cf5985526850120be48e7ca16ecf.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/4a41cf5985526850120be48e7ca16ecf.png",
         "pc": 10
     },
     "1679": {
         "n": "c字超火",
-        "pic": "/1805/0add5e23b601a2fd1c6ee4f350cd44f2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1805/0add5e23b601a2fd1c6ee4f350cd44f2.png",
         "pc": 200000
     },
     "1685": {
         "n": "银河特快",
-        "pic": "/1806/c6167bb4e66b62ddca5b55e333f060b5.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/c6167bb4e66b62ddca5b55e333f060b5.png",
         "pc": 200000
     },
     "1699": {
         "n": "一周年快乐",
-        "pic": "/1806/aae7237f271c135a42512643e7424332.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/aae7237f271c135a42512643e7424332.png",
         "pc": 200000
     },
     "1700": {
         "n": "金榜题名",
-        "pic": "/1806/ac05def518e3e83fbdd69cc6e85a52ef.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/ac05def518e3e83fbdd69cc6e85a52ef.png",
         "pc": 200000
     },
     "1701": {
         "n": "第二杯半价",
-        "pic": "/1806/da3683f893267bc9c7749a2e31e3c9fb.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/da3683f893267bc9c7749a2e31e3c9fb.png",
         "pc": 200000
     },
     "1702": {
         "n": "枫哥很喜欢",
-        "pic": "/1806/455d7cb2e35bf3def6d8c49626ab3624.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/455d7cb2e35bf3def6d8c49626ab3624.png",
         "pc": 200000
     },
     "1715": {
         "n": "凌仕净油飞机",
-        "pic": "/1806/8595867327fb9b924cf92abdc5c774ca.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/8595867327fb9b924cf92abdc5c774ca.png",
         "pc": 10000
     },
     "1716": {
         "n": "抽奖辩非欧",
-        "pic": "/1806/cd19a1ccdf871642c85ec99775dfbbf7.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/cd19a1ccdf871642c85ec99775dfbbf7.png",
         "pc": 200000
     },
     "1722": {
         "n": "07专属火箭",
-        "pic": "/1806/70b2575fc3e25f029443f380233e56cb.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/70b2575fc3e25f029443f380233e56cb.png",
         "pc": 200000
     },
     "1737": {
         "n": "旗开得胜",
-        "pic": "/1806/45340221e8f0951e946520fb6c3faf70.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/45340221e8f0951e946520fb6c3faf70.png",
         "pc": 10
     },
     "1738": {
         "n": "旗开得胜",
-        "pic": "/1806/f8937506fe30af16625eab40ff460729.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/f8937506fe30af16625eab40ff460729.png",
         "pc": 10
     },
     "1743": {
         "n": "冷小兔一周年",
-        "pic": "/1806/80a198b54eb2242a984d13d6160d59d7.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/80a198b54eb2242a984d13d6160d59d7.png",
         "pc": 200000
     },
     "1744": {
         "n": "俗",
-        "pic": "/1806/691331d98620747132a0bb10db963993.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/691331d98620747132a0bb10db963993.png",
         "pc": 200000
     },
     "1748": {
         "n": "今生护你周全",
-        "pic": "/1806/a47ecf29e06b25eaa72cda0f91b80463.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/a47ecf29e06b25eaa72cda0f91b80463.png",
         "pc": 200000
     },
     "1749": {
         "n": "梦回TI2",
-        "pic": "/1806/ed9379af359db6bae8fb2de42156d5cd.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/ed9379af359db6bae8fb2de42156d5cd.png",
         "pc": 200000
     },
     "1750": {
         "n": "皇家同花顺",
-        "pic": "/1806/658169f802c9a2afa2541437c05996ff.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/658169f802c9a2afa2541437c05996ff.png",
         "pc": 200000
     },
     "1751": {
         "n": "幻想乡快旅",
-        "pic": "/1806/946719d5968e1f69438204e582382294.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/946719d5968e1f69438204e582382294.png",
         "pc": 200000
     },
     "1752": {
         "n": "草莓vv呀",
-        "pic": "/1806/5563684a223207a97555d26fe4ee94e5.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/5563684a223207a97555d26fe4ee94e5.png",
         "pc": 200000
     },
     "1753": {
         "n": "骚白喵喵喵",
-        "pic": "/1806/2bbbbf41060903c2213106404dbb12bd.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/2bbbbf41060903c2213106404dbb12bd.png",
         "pc": 200000
     },
     "1754": {
         "n": "国民姑姑",
-        "pic": "/1806/194a6b0a6fbaf9c2241be286f925fe40.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/194a6b0a6fbaf9c2241be286f925fe40.png",
         "pc": 200000
     },
     "1755": {
         "n": "意大利炮",
-        "pic": "/1806/1cf474d15c4cb18ba47bb33a0038ba83.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/1cf474d15c4cb18ba47bb33a0038ba83.png",
         "pc": 200000
     },
     "1756": {
         "n": "六元带你上天",
-        "pic": "/1806/b2771b47442e75425753c76cbb17f1e2.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/b2771b47442e75425753c76cbb17f1e2.png",
         "pc": 200000
     },
     "1757": {
         "n": "办卡",
-        "pic": "/1806/0d9a3a1a29c910052fe95ad3207a952e.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/0d9a3a1a29c910052fe95ad3207a952e.png",
         "pc": 600
     },
     "1761": {
         "n": "生日烟花",
-        "pic": "/1806/caed96bb573c5f70a42b6c4bc2706124.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1806/caed96bb573c5f70a42b6c4bc2706124.png",
         "pc": 200000
     },
     "1773": {
         "n": "小浛最漂亮",
-        "pic": "/1807/c4b1177f1a0578824b0a78166cde673d.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1807/c4b1177f1a0578824b0a78166cde673d.png",
         "pc": 200000
     },
     "1791": {
         "n": "Rola专属",
-        "pic": "/1807/e3f2074f9471b7bc6752f97edf953b09.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1807/e3f2074f9471b7bc6752f97edf953b09.png",
         "pc": 200000
     },
     "1792": {
         "n": "鲸鱼欧尼",
-        "pic": "/1807/c13d6284ddbddd6e9a6592cba0c82e96.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1807/c13d6284ddbddd6e9a6592cba0c82e96.png",
         "pc": 200000
     },
     "1795": {
         "n": "一起哈啤",
-        "pic": "/1807/cfdbe340db0e0b980b6e07da300ff59f.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1807/cfdbe340db0e0b980b6e07da300ff59f.png",
         "pc": 10
     },
     "1796": {
         "n": "观花赏月",
-        "pic": "/1807/0ae0f407b4b617f6eb1b2107a9f036b1.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1807/0ae0f407b4b617f6eb1b2107a9f036b1.png",
         "pc": 200000
     },
     "1797": {
         "n": "我们生日快乐",
-        "pic": "/1807/df119f985f9ca9769ffb797866408914.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1807/df119f985f9ca9769ffb797866408914.png",
         "pc": 200000
     },
     "1798": {
         "n": "Rola加油",
-        "pic": "/1807/31fdb0f5b2abe6305cf14e67d6584c73.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1807/31fdb0f5b2abe6305cf14e67d6584c73.png",
         "pc": 200000
     },
     "1800": {
         "n": "69式饺子",
-        "pic": "/1807/f65587711d6045ee9117c3a5f10ba92d.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1807/f65587711d6045ee9117c3a5f10ba92d.png",
         "pc": 200000
     },
     "1804": {
         "n": "帝国舰队",
-        "pic": "/1807/3d0c42d5ce82099871fa6aa0a8d89aaa.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1807/3d0c42d5ce82099871fa6aa0a8d89aaa.png",
         "pc": 50100
     },
     "1805": {
         "n": "可爱羡羡火箭",
-        "pic": "/1807/6b3586a75805c008efc9860d76b2f187.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1807/6b3586a75805c008efc9860d76b2f187.png",
         "pc": 50000
     },
     "1806": {
         "n": "粉丝荧光棒",
-        "pic": "/1807/76d6f8147f1c037e05a99068d511f356.png",
+        "pic": "https://gfs-op.douyucdn.cn/dygift/1807/76d6f8147f1c037e05a99068d511f356.png",
         "pc": 10
     },
     "1813": {

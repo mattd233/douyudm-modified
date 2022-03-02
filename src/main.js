@@ -37,13 +37,13 @@ async function startListening() {
 
     //获取房间礼物数据
     let data = await getRoomGiftData(roomId);
-    let roomGiftData = { prefix: "https://gfs-op.douyucdn.cn/dygift" };
+    let roomGiftData = {};
     if ("giftList" in data.data) {
         for (let i = 0; i < data.data.giftList.length; i++) {
             let item = data.data.giftList[i];
             roomGiftData[item.id] = {
                 n: item.name,
-                pic: item.basicInfo.giftPic.replace("https://gfs-op.douyucdn.cn/dygift", ""),
+                pic: item.basicInfo.giftPic,
                 pc: item.priceInfo.price,
             };
         }
@@ -51,17 +51,14 @@ async function startListening() {
     allGiftData = {};
     allGiftData = { ...roomGiftData, ...giftData };
 
-    const giftJson = JSON.stringify(allGiftData);
-    // write JSON string to a file
-    fs.writeFile('gift.json', giftJson, (err) => {
-        if (err) {
-            throw err;
-        }
-        console.log("JSON data is saved.");
-    });
-
-
-
+    // const giftJson = JSON.stringify(allGiftData);
+    // // write JSON string to a file
+    // fs.writeFile('gift.json', giftJson, (err) => {
+    //     if (err) {
+    //         throw err;
+    //     }
+    //     console.log("JSON data is saved.");
+    // });
 
     //系统事件
     room.on("connect", function () {
@@ -70,8 +67,10 @@ async function startListening() {
     room.on("disconnect", function () {
         console.log("[disconnect] roomId=%s", this.roomId);
     });
+    // reconnect after error
     room.on("error", function (err) {
         console.log("[error] roomId=%s", this.roomId);
+        room.run();
     });
 
     //消息事件
@@ -93,6 +92,7 @@ async function startListening() {
         if (res.txt.startsWith("#sc")) {
             const text = res.txt.replace("#sc", "").trim();
             const nickname = res.nn;
+            const avatar = res.ic;
             const scQuery = `SELECT * FROM gift`;
             db.query(scQuery, (err, res) => {
                 if (err) {
@@ -115,12 +115,13 @@ async function startListening() {
                     } else if (gifts[i].nn === nickname) {
                         // price is pc * cnt / 100
                         value += allGiftData[gifts[i].gfid].pc * gifts[i].gfcnt / 100;
+                        console.log(`${gifts[i].nn} * ${gifts[i].gfcnt}`);
                         console.log(value);
                         currUser.push(gifts[i].id);
                     }
                 }
-                const scEnabled = false;
-                const highlight = false;
+                let scEnabled = false;
+                let highlight = false;
                 // 根据统计的value来执行
                 if (value >= 50) {
                     highlight = true
@@ -131,7 +132,7 @@ async function startListening() {
                     console.log("Not enough value.")
                 }
                 if (scEnabled) {
-                    const scInsert = `INSERT INTO sc(highlight, nn ,txt) VALUES('${highlight}', '${nickname}', '${text}')`;
+                    const scInsert = `INSERT INTO sc(highlight, nn, avatar, txt) VALUES('${highlight}', '${nickname}', '${avatar}', '${text}')`;
                     db.query(scInsert, (err) => {
                         console.log(err ? err.stack : ` -- [${nickname}] 发了一条sc`);
                     });
@@ -141,13 +142,12 @@ async function startListening() {
                 if (scEnabled) {
                     Array.prototype.push.apply(toDelete, currUser);
                 }
-                console.log(toDelete);
                 if (toDelete.length > 0) {
                     // 删除需要删除的value
                     let scDelete = `DELETE FROM gift WHERE id IN (`;
                     for (let i = 0; i < toDelete.length; i++) {
                         // last character
-                        if (i === gifts.length - 1) {
+                        if (i === toDelete.length - 1) {
                             scDelete += `${toDelete[i]})`;
                             break;
                         }
@@ -176,14 +176,18 @@ async function startListening() {
         }
 
         const nn = res.nn;
-        const avatar = res.ic; // 头像
         const gfcnt = res.gfcnt;
-        const giftsInsert = `INSERT INTO gift(nn, avatar, gfid, gfcnt) VALUES('${nn}', '${avatar}', '${gfid}', '${gfcnt}')`;
+        const giftsInsert = `INSERT INTO gift(nn, gfid, gfcnt) VALUES('${nn}', '${gfid}', '${gfcnt}')`;
         db.query(giftsInsert, (err) => {
             console.log(
                 err ? err.stack : ` -- [${nn}] 赠送了价值 ${allGiftData[gfid].pc / 100} 的 ${allGiftData[gfid].n}x${gfcnt}`
             );
         });
+    });
+
+    //无视广播（可能是其他直播间）
+    room.on("spbc", function () {
+        // console.log(`------------- 感谢[${r.sn}] 赠送的 ${r.gn}x${r.gc}`)
     });
 
     room.on("loginres", function () {
