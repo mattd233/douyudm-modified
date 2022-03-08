@@ -1,0 +1,34 @@
+-- Init file
+SET TIMEZONE = 'Asia/Shanghai';
+
+DROP TABLE IF EXISTS playlist CASCADE;
+
+CREATE TABLE playlist(
+	id SERIAL PRIMARY KEY,
+  nn VARCHAR(30),
+	title VARCHAR(100), 
+  sang boolean DEFAULT false,
+	ts TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+DROP TABLE IF EXISTS gift CASCADE;
+
+CREATE TABLE gift(
+  id SERIAL PRIMARY KEY,
+  nn VARCHAR(30),
+  gfid INT,
+  gfcnt INT,
+  ts TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+DROP TABLE IF EXISTS sc CASCADE;
+
+CREATE TABLE sc(
+  id SERIAL PRIMARY KEY,
+  nn VARCHAR(30),
+  avatar VARCHAR(100),
+  total_pc INT,
+  txt VARCHAR(100),
+  expired BOOLEAN DEFAULT false,
+  ts TIMESTAMPTZ NOT NULL DEFAULT NOW()
+)
