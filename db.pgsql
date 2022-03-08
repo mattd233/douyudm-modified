@@ -1,6 +1,8 @@
-DROP TABLE IF EXISTS diange CASCADE;
+SET TIMEZONE = 'Asia/Shanghai';
 
-CREATE TABLE diange(
+DROP TABLE IF EXISTS playlist CASCADE;
+
+CREATE TABLE playlist(
 	id SERIAL PRIMARY KEY,
   nn VARCHAR(30),
 	title VARCHAR(100), 
@@ -8,7 +10,7 @@ CREATE TABLE diange(
 	ts TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-SET timezone = 'Asia/Shanghai';
+
 
 DROP TABLE IF EXISTS gift CASCADE;
 
@@ -32,16 +34,16 @@ INSERT INTO gift(nn, gfid, gfcnt) VALUES('真栗栗的萝卜卜', '21672', '1');
 INSERT INTO gift(nn, gfid, gfcnt) VALUES('INnoVation保护协会', '20001', '100');
 -- 普通sc
 -- INSERT INTO gift(nn, gfid, gfcnt) VALUES('INnoVation保护协会', '20002', '5');
--- 高亮sc
 INSERT INTO gift(nn, gfid, gfcnt) VALUES('INnoVation保护协会', '20004', '1');
 
 DROP TABLE IF EXISTS sc CASCADE;
 
 CREATE TABLE sc(
   id SERIAL PRIMARY KEY,
-  highlight BOOLEAN,
   nn VARCHAR(30),
   avatar VARCHAR(100),
+  total_pc INT,
   txt VARCHAR(100),
+  expired BOOLEAN DEFAULT false,
   ts TIMESTAMPTZ NOT NULL DEFAULT NOW()
 )

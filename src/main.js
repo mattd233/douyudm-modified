@@ -30,7 +30,7 @@ async function startListening() {
     //设置房间号，初始化
     const roomId = 3187637; // llm
     const opts = {
-        debug: true, // 默认关闭 false
+        debug: false, // 默认关闭 false
         ignore: ["mrkl"],
     };
     const room = new client(roomId, opts);
@@ -75,14 +75,14 @@ async function startListening() {
 
     //消息事件
     room.on("chatmsg", function (res) {
-        console.log("[chatmsg]", `<lv ${res.level}> [${res.nn}] ${res.txt}`);
+        // console.log("[chatmsg]", `<lv ${res.level}> [${res.nn}] ${res.txt}`);
         // console.log(res)
         // 钻粉点歌
         if (res.diaf === "1" && res.txt.startsWith("#点歌")) {
             //只保留歌名
             const title = res.txt.replace("#点歌", "").trim();
             //点歌人nn，歌名，时间戳
-            const diangeInsert = `INSERT INTO diange(nn, title) VALUES('${res.nn}', '${title}')`;
+            const diangeInsert = `INSERT INTO playlist(nn, title) VALUES('${res.nn}', '${title}')`;
             db.query(diangeInsert, (err) => {
                 console.log(err ? err.stack : ` -- [${res.nn}] 点了一首 ${title}`);
             });
@@ -105,34 +105,31 @@ async function startListening() {
                 let currUser = [];
                 let value = 0;
                 for (let i = 0; i < gifts.length; i++) {
+                    const gift = gifts[i];
                     const ts = new Date(gifts[i].ts).getTime();
                     // elased time in minutes
                     const elapsed = (new Date().getTime() - ts) / 1000 / 60;
                     if (elapsed > 5) {
                         // mark the item for deletion
-                        toDelete.push(gifts[i].id);
+                        toDelete.push(gift.id);
                         continue;
-                    } else if (gifts[i].nn === nickname) {
+                    } else if (gift.nn === nickname) {
                         // price is pc * cnt / 100
-                        value += allGiftData[gifts[i].gfid].pc * gifts[i].gfcnt / 100;
-                        console.log(`${gifts[i].nn} * ${gifts[i].gfcnt}`);
+                        value += allGiftData[gift.gfid].pc * gift.gfcnt / 100;
+                        console.log(`${allGiftData[gift.gfid].n} * ${gift.gfcnt}`);
                         console.log(value);
-                        currUser.push(gifts[i].id);
+                        currUser.push(gift.id);
                     }
                 }
                 let scEnabled = false;
-                let highlight = false;
                 // 根据统计的value来执行
-                if (value >= 50) {
-                    highlight = true
-                    scEnabled = true
-                } else if (value >= 30) {
+                if (value >= 30) {
                     scEnabled = true
                 } else {
                     console.log("Not enough value.")
                 }
                 if (scEnabled) {
-                    const scInsert = `INSERT INTO sc(highlight, nn, avatar, txt) VALUES('${highlight}', '${nickname}', '${avatar}', '${text}')`;
+                    const scInsert = `INSERT INTO sc(nn, avatar, total_pc, txt) VALUES('${nickname}', '${avatar}', '${value}', '${text}')`;
                     db.query(scInsert, (err) => {
                         console.log(err ? err.stack : ` -- [${nickname}] 发了一条sc`);
                     });
@@ -179,9 +176,12 @@ async function startListening() {
         const gfcnt = res.gfcnt;
         const giftsInsert = `INSERT INTO gift(nn, gfid, gfcnt) VALUES('${nn}', '${gfid}', '${gfcnt}')`;
         db.query(giftsInsert, (err) => {
-            console.log(
-                err ? err.stack : ` -- [${nn}] 赠送了价值 ${allGiftData[gfid].pc / 100} 的 ${allGiftData[gfid].n}x${gfcnt}`
-            );
+            if (err) {
+                console.log(err.stack);
+            } 
+            // else {
+            //     console.log(` -- [${nn}] 赠送了价值 ${allGiftData[gfid].pc / 100} 的 ${allGiftData[gfid].n}x${gfcnt}`);
+            // }
         });
     });
 
