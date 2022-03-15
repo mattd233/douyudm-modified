@@ -2,6 +2,7 @@
 const { Pool } = require('pg')
 
 const db = new Pool({
+  // host: 'host.docker.internal',
   host: 'localhost',
   database: 'douyu',
   user: 'llm',

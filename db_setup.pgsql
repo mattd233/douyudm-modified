@@ -18,6 +18,7 @@ CREATE TABLE gift(
   nn VARCHAR(30),
   gfid INT,
   gfcnt INT,
+  expired BOOLEAN DEFAULT false,
   ts TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
@@ -27,8 +28,8 @@ CREATE TABLE sc(
   id SERIAL PRIMARY KEY,
   nn VARCHAR(30),
   avatar VARCHAR(100),
-  total_pc INT,
+  total_pc FLOAT,
   txt VARCHAR(100),
   expired BOOLEAN DEFAULT false,
   ts TIMESTAMPTZ NOT NULL DEFAULT NOW()
-)
+);

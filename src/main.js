@@ -89,19 +89,20 @@ async function startListening() {
         }
 
         // superchat
-        if (res.txt.startsWith("#sc")) {
-            const text = res.txt.replace("#sc", "").trim();
+        if (res.txt.toLowerCase().startsWith('#sc')) {
+            const text = res.txt.slice(3, res.txt.length).trim();
             const nickname = res.nn;
             const avatar = res.ic;
-            const scQuery = `SELECT * FROM gift`;
+            console.log(`-- ${nickname} 尝试发送了一条sc[${text}]`)
+            const scQuery = `SELECT * FROM gift WHERE nn = '${nickname}' AND used = false`;
             db.query(scQuery, (err, res) => {
                 if (err) {
                     console.log(err);
                     return;
                 }
-                // 遍历所有礼物， 标记超时的
+                // 遍历该用户所有礼物， 标记超时的
                 const gifts = res.rows;
-                let toDelete = [];
+                let toExpire = [];
                 let currUser = [];
                 let value = 0;
                 for (let i = 0; i < gifts.length; i++) {
@@ -109,21 +110,19 @@ async function startListening() {
                     const ts = new Date(gifts[i].ts).getTime();
                     // elased time in minutes
                     const elapsed = (new Date().getTime() - ts) / 1000 / 60;
-                    if (elapsed > 5) {
+                    if (elapsed > 3.0) {
                         // mark the item for deletion
-                        toDelete.push(gift.id);
+                        toExpire.push(gift.id);
                         continue;
                     } else if (gift.nn === nickname) {
                         // price is pc * cnt / 100
                         value += allGiftData[gift.gfid].pc * gift.gfcnt / 100;
-                        console.log(`${allGiftData[gift.gfid].n} * ${gift.gfcnt}`);
-                        console.log(value);
                         currUser.push(gift.id);
                     }
                 }
                 let scEnabled = false;
                 // 根据统计的value来执行
-                if (value >= 30) {
+                if (value >= 30.0) {
                     scEnabled = true
                 } else {
                     console.log("Not enough value.")
@@ -131,26 +130,26 @@ async function startListening() {
                 if (scEnabled) {
                     const scInsert = `INSERT INTO sc(nn, avatar, total_pc, txt) VALUES('${nickname}', '${avatar}', '${value}', '${text}')`;
                     db.query(scInsert, (err) => {
-                        console.log(err ? err.stack : ` -- [${nickname}] 发了一条sc`);
+                        console.log(err ? err.stack : ` -- success`);
                     });
                 }
 
                 // 删除用户使用掉的礼物
                 if (scEnabled) {
-                    Array.prototype.push.apply(toDelete, currUser);
+                    Array.prototype.push.apply(toExpire, currUser);
                 }
-                if (toDelete.length > 0) {
+                if (toExpire.length > 0) {
                     // 删除需要删除的value
-                    let scDelete = `DELETE FROM gift WHERE id IN (`;
-                    for (let i = 0; i < toDelete.length; i++) {
+                    let scExpire = `UPDATE FROM gift SET expired = true WHERE id IN (`;
+                    for (let i = 0; i < toExpire.length; i++) {
                         // last character
-                        if (i === toDelete.length - 1) {
-                            scDelete += `${toDelete[i]})`;
+                        if (i === toExpire.length - 1) {
+                            scExpire += `${toExpire[i]})`;
                             break;
                         }
-                        scDelete += `${toDelete[i]},`;
+                        scExpire += `${toExpire[i]},`;
                     }
-                    db.query(scDelete, (err) => {
+                    db.query(scExpire, (err) => {
                         if (err) {
                             console.log(err);
                         }
