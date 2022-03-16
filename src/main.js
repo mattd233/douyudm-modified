@@ -24,6 +24,15 @@ function getRoomGiftData(rid) {
     });
 }
 
+//清理前一个月的gift
+function clearExpiredGift() {
+    const clearQuery = `DELETE FROM gift 
+    WHERE date_trunc('month', ts) = date_trunc('month', current_date - interval '1 month')`;
+    db.query(clearQuery, (err) => {
+        console.log(err ? err.stack : "Clearing last month's gift data.");
+    });
+}
+
 // allGiftData.value = {...roomGiftData, ...giftData};
 
 async function startListening() {
@@ -50,6 +59,10 @@ async function startListening() {
     }
     allGiftData = {};
     allGiftData = { ...roomGiftData, ...giftData };
+    console.log('[fetch] retreiving room gift data.');
+
+    //每天清理上个月的过期礼物
+    setInterval(clearExpiredGift, 1000 * 3600 * 24)
 
     // const giftJson = JSON.stringify(allGiftData);
     // // write JSON string to a file
@@ -93,8 +106,7 @@ async function startListening() {
             const text = res.txt.slice(3, res.txt.length).trim();
             const nickname = res.nn;
             const avatar = res.ic;
-            console.log(`-- ${nickname} 尝试发送了一条sc[${text}]`)
-            const scQuery = `SELECT * FROM gift WHERE nn = '${nickname}' AND used = false`;
+            const scQuery = `SELECT * FROM gift WHERE nn = '${nickname}' AND expired = false`;
             db.query(scQuery, (err, res) => {
                 if (err) {
                     console.log(err);
@@ -125,10 +137,10 @@ async function startListening() {
                 if (value >= 30.0) {
                     scEnabled = true
                 } else {
-                    console.log("Not enough value.")
+                    console.log(`Not enough value. You have ${value}.`)
                 }
                 if (scEnabled) {
-                    const scInsert = `INSERT INTO sc(nn, avatar, total_pc, txt) VALUES('${nickname}', '${avatar}', '${value}', '${text}')`;
+                    const scInsert = `INSERT INTO sc(nn, avatar, total_pc, txt) VALUES('${nickname}', '${avatar}', '${parseInt(value)}', '${text}')`;
                     db.query(scInsert, (err) => {
                         console.log(err ? err.stack : ` -- success`);
                     });
@@ -140,7 +152,7 @@ async function startListening() {
                 }
                 if (toExpire.length > 0) {
                     // 删除需要删除的value
-                    let scExpire = `UPDATE FROM gift SET expired = true WHERE id IN (`;
+                    let scExpire = `UPDATE gift SET expired = true WHERE id IN (`;
                     for (let i = 0; i < toExpire.length; i++) {
                         // last character
                         if (i === toExpire.length - 1) {
