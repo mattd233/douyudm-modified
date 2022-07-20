@@ -37,7 +37,7 @@ function clearExpiredGift() {
 
 async function startListening() {
     //设置房间号，初始化
-    const roomId = 3187637; // llm
+    const roomId = 3187637;
     const opts = {
         debug: false, // 默认关闭 false
         ignore: ["mrkl"],
@@ -88,7 +88,6 @@ async function startListening() {
 
     //消息事件
     room.on("chatmsg", function (res) {
-        // console.log("[chatmsg]", `<lv ${res.level}> [${res.nn}] ${res.txt}`);
         // console.log(res)
         // 钻粉点歌
         if (res.diaf === "1" && res.txt.startsWith("#点歌")) {
@@ -142,7 +141,7 @@ async function startListening() {
                 if (scEnabled) {
                     const scInsert = `INSERT INTO sc(nn, avatar, total_pc, txt) VALUES('${nickname}', '${avatar}', '${parseInt(value)}', '${text}')`;
                     db.query(scInsert, (err) => {
-                        console.log(err ? err.stack : ` -- success`);
+                        console.log(err ? err.stack : `${scInsert} -- success`);
                     });
                 }
 
@@ -174,6 +173,7 @@ async function startListening() {
     //记录礼物（忽略荧光棒，鱼丸和超大丸星）
     const IGNORE = ["824", "20000", "20008"];
     room.on("dgb", function (res) {
+        // console.log(res);
         const gfid = res.gfid;
         if (IGNORE.includes(gfid)) {
             return;
@@ -190,9 +190,9 @@ async function startListening() {
             if (err) {
                 console.log(err.stack);
             } 
-            // else {
-            //     console.log(` -- [${nn}] 赠送了价值 ${allGiftData[gfid].pc / 100} 的 ${allGiftData[gfid].n}x${gfcnt}`);
-            // }
+            else {
+                console.log(` -- [${nn}] 赠送了价值 ${allGiftData[gfid].pc / 100} 的 ${allGiftData[gfid].n}x${gfcnt}`);
+            }
         });
     });
 
