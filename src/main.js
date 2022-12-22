@@ -8,7 +8,7 @@ const { getGiftData } = require("../src/getGiftData");
 // 清理前一个月的gift
 function clearExpiredGift() {
   const clearQuery = `DELETE FROM gift 
-    WHERE date_trunc('month', ts) = date_trunc('month', current_date - interval '1 month')`;
+    WHERE date_trunc('month', created_at) = date_trunc('month', current_date - interval '1 month')`;
   db.query(clearQuery, (err) => {
     console.log(err ? err.stack : "Clearing last month's gift data.");
   });
@@ -52,7 +52,7 @@ async function startListening() {
       // 只保留歌名
       const title = res.txt.replace("#点歌", "").trim();
       // 点歌人昵称，歌名，时间戳
-      const diangeInsert = `INSERT INTO playlist(nn, title) VALUES('${res.nn}', '${title}')`;
+      const diangeInsert = `INSERT INTO playlist(belongs_to_user, title) VALUES('${res.nn}', '${title}')`;
       db.query(diangeInsert, (err) => {
         console.log(err ? err.stack : ` -- [${res.nn}] 点了一首 ${title}`);
       });
@@ -63,7 +63,7 @@ async function startListening() {
       const text = res.txt.slice(3, res.txt.length).trim();
       const nickname = res.nn;
       const avatar = res.ic;
-      const scQuery = `SELECT * FROM gift WHERE nn = '${nickname}' AND expired = false`;
+      const scQuery = `SELECT * FROM gift WHERE belongs_to_user = '${nickname}' AND expired = false`;
       db.query(scQuery, (err, res) => {
         if (err) {
           console.log(err);
@@ -76,16 +76,16 @@ async function startListening() {
         let value = 0;
         for (let i = 0; i < gifts.length; i++) {
           const gift = gifts[i];
-          const ts = new Date(gifts[i].ts).getTime();
+          const created_at = new Date(gifts[i].created_at).getTime();
           // elased time in minutes
-          const elapsed = (new Date().getTime() - ts) / 1000 / 60;
+          const elapsed = (new Date().getTime() - created_at) / 1000 / 60;
           if (elapsed > 3.0) {
             // mark the item for deletion
             toExpire.push(gift.id);
             continue;
-          } else if (gift.nn === nickname) {
+          } else if (gift.belongs_to_user === nickname) {
             // price is pc * cnt / 100
-            value += (giftData[gift.gfid].pc * gift.gfcnt) / 100;
+            value += (giftData[gift.gift_id].pc * gift.gift_count) / 100;
             currUser.push(gift.id);
           }
         }
@@ -97,7 +97,7 @@ async function startListening() {
           console.log(`Not enough value. You have ${value}.`);
         }
         if (scEnabled) {
-          const scInsert = `INSERT INTO sc(nn, avatar, total_pc, txt) VALUES('${nickname}', '${avatar}', '${parseInt(
+          const scInsert = `INSERT INTO sc(belongs_to_user, avatar, total_price, text) VALUES('${nickname}', '${avatar}', '${parseInt(
             value
           )}', '${text}')`;
           db.query(scInsert, (err) => {
@@ -133,27 +133,26 @@ async function startListening() {
   // 记录礼物（忽略荧光棒，鱼丸和超大丸星）
   const IGNORE = ["824", "20000", "20008"];
   room.on("dgb", function (res) {
-    // console.log(res);
-    const gfid = res.gfid;
-    if (IGNORE.includes(gfid)) {
+    const gift_id = res.gfid;
+    if (IGNORE.includes(gift_id)) {
       return;
     }
-    if (!giftData[gfid]) {
-      console.log(res);
+    if (!giftData[gift_id]) {
+      console.log(`gift data doesn't contain gift with id: ${gift_id}`);
       return;
     }
 
-    const nn = res.nn;
-    const gfcnt = res.gfcnt;
-    const giftsInsert = `INSERT INTO gift(nn, gfid, gfcnt) VALUES('${nn}', '${gfid}', '${gfcnt}')`;
+    const belongs_to_user = res.nn;
+    const gift_count = res.gfcnt;
+    const giftsInsert = `INSERT INTO gift(belongs_to_user, gift_id, gift_count) VALUES('${belongs_to_user}', '${gift_id}', '${gift_count}')`;
     db.query(giftsInsert, (err) => {
       if (err) {
         console.log(err.stack);
       } else {
         console.log(
-          ` -- [${nn}] 赠送了价值 ${giftData[gfid].pc / 100} 的 ${
-            giftData[gfid].n
-          }x${gfcnt}`
+          ` -- [${belongs_to_user}] 赠送了价值 ${giftData[gift_id].pc / 100} 的 ${
+            giftData[gift_id].n
+          }x${gift_count}`
         );
       }
     });

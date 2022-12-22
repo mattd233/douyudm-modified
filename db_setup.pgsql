@@ -1,35 +1,35 @@
 -- Init file
 SET TIMEZONE = 'Asia/Shanghai';
 
-DROP TABLE IF EXISTS playlist CASCADE;
+DROP TABLE IF EXISTS song CASCADE;
 
-CREATE TABLE playlist(
+CREATE TABLE song(
 	id SERIAL PRIMARY KEY,
-  nn VARCHAR(30),
+  belongs_to_user VARCHAR(30),
 	title VARCHAR(100), 
   sang boolean DEFAULT false,
-	ts TIMESTAMPTZ NOT NULL DEFAULT NOW()
+	created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
 DROP TABLE IF EXISTS gift CASCADE;
 
 CREATE TABLE gift(
   id SERIAL PRIMARY KEY,
-  nn VARCHAR(30),
-  gfid INT,
-  gfcnt INT,
+  belongs_to_user VARCHAR(30),
+  gift_id INT,
+  gift_count INT,
   expired BOOLEAN DEFAULT false,
-  ts TIMESTAMPTZ NOT NULL DEFAULT NOW()
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-DROP TABLE IF EXISTS sc CASCADE;
+DROP TABLE IF EXISTS superchat CASCADE;
 
-CREATE TABLE sc(
+CREATE TABLE superchat(
   id SERIAL PRIMARY KEY,
-  nn VARCHAR(30),
+  belongs_to_user VARCHAR(30),
   avatar VARCHAR(100),
-  total_pc FLOAT,
-  txt VARCHAR(100),
+  total_price FLOAT,
+  text VARCHAR(100),
   expired BOOLEAN DEFAULT false,
-  ts TIMESTAMPTZ NOT NULL DEFAULT NOW()
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
