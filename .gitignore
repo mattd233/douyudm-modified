@@ -1,4 +1,6 @@
 .DS_Store
 /*.json
-/node_modules
+/*.tar.gz
 /*version
+/node_modules
+environment

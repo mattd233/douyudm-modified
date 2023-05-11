@@ -16,7 +16,7 @@ function clearExpiredGift() {
 
 async function startListening() {
   // 设置房间号，初始化
-  const roomId = 3484;
+  const roomId = 3187637;
   const opts = {
     debug: false, // 默认关闭 false
     ignore: ["mrkl"],
