@@ -77,9 +77,10 @@ async function startListening() {
         for (let i = 0; i < gifts.length; i++) {
           const gift = gifts[i];
           const created_at = new Date(gifts[i].created_at).getTime();
-          // elased time in minutes
+          // elased and expiry time (in minutes)
           const elapsed = (new Date().getTime() - created_at) / 1000 / 60;
-          if (elapsed > 3.0) {
+          const expiryTime = 10.0
+          if (elapsed > expiryTime) {
             // mark the item for deletion
             toExpire.push(gift.id);
             continue;
@@ -94,10 +95,10 @@ async function startListening() {
         if (value >= 30.0) {
           scEnabled = true;
         } else {
-          console.log(`Not enough value. You have ${value}.`);
+          console.log(`Not enough value. User '${nickname}' having ${value} tried to send superchat ${text}.`);
         }
         if (scEnabled) {
-          const scInsert = `INSERT INTO sc(belongs_to_user, avatar, total_price, text) VALUES('${nickname}', '${avatar}', '${parseInt(
+          const scInsert = `INSERT INTO superchat(belongs_to_user, avatar, total_price, text) VALUES('${nickname}', '${avatar}', '${parseInt(
             value
           )}', '${text}')`;
           db.query(scInsert, (err) => {
@@ -130,8 +131,8 @@ async function startListening() {
     }
   });
 
-  // 记录礼物（忽略荧光棒，鱼丸和超大丸星）
-  const IGNORE = ["824", "20000", "20008"];
+  // 记录礼物（忽略荧光棒，鱼丸, 超大丸星, 钻粉荧光棒）
+  const IGNORE = ["824", "20000", "20008", "22899"];
   room.on("dgb", function (res) {
     const gift_id = res.gfid;
     if (IGNORE.includes(gift_id)) {
@@ -139,6 +140,10 @@ async function startListening() {
     }
     if (!giftData[gift_id]) {
       console.log(`gift data doesn't contain gift with id: ${gift_id}`);
+      return;
+    }
+    // 忽略1块钱以下的礼物
+    if (giftData[gift_id].pc && giftData[gift_id].pc < 100) {
       return;
     }
 
@@ -150,9 +155,7 @@ async function startListening() {
         console.log(err.stack);
       } else {
         console.log(
-          ` -- [${belongs_to_user}] 赠送了价值 ${giftData[gift_id].pc / 100} 的 ${
-            giftData[gift_id].n
-          }x${gift_count}`
+          ` -- [${belongs_to_user}] 赠送了价值 ${giftData[gift_id].pc / 100} 的 ${giftData[gift_id].n}x${gift_count}, gift_id: ${gift_id}`
         );
       }
     });

@@ -20,3 +20,4 @@ ssh -i $SSH_KEY_PATH root@$IP_ADDRESS "chmod +x deploy.sh && ./deploy.sh"
 
 # clean up
 ssh -i $SSH_KEY_PATH root@$IP_ADDRESS "rm -rf ~/$filename deploy.sh"
+rm -rf $filename
